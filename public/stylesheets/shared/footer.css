@@ -5,7 +5,7 @@ footer {
 
 .footer-info {
     display: flex;
-    align-items: center;    
+    align-items: center;
     background-color: var(--accent-color);
     padding: .7rem 2rem .7rem;
     border-radius: 5px 5px 0 0;
@@ -20,4 +20,19 @@ footer {
 
 .footer-info a:hover {
     transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+    footer {
+        width: 100%;
+    }
+
+    .footer-info {
+        padding: .7rem 1rem .7rem;
+        border-radius: 0;
+    }
+
+    .footer-info a {
+        font-size: 1rem;
+    }
 }
