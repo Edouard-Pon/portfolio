@@ -3,17 +3,21 @@
     <div class="profile-details-grid">
         <% if (profile.programmingLanguages.length > 0) { %>
             <div class="profile-details-item-label">Programming Languages</div>
-            <% profile.programmingLanguages.forEach(pl => { %>
-                <div class="profile-details-item"><%= pl %></div>
-            <% }) %>
+            <div class="profile-details-items">
+                <% profile.programmingLanguages.forEach(pl => { %>
+                    <div class="profile-details-item"><%= pl %></div>
+                <% }) %>
+            </div>
         <% } %>
     </div>
     <div class="profile-details-grid">
         <% if (profile.languages.length > 0) { %>
             <div class="profile-details-item-label">Languages</div>
-            <% profile.languages.forEach(l => { %>
-                <div class="profile-details-item"><%= l %></div>
-            <% }) %>
+            <div class="profile-details-items">
+                <% profile.languages.forEach(l => { %>
+                    <div class="profile-details-item"><%= l %></div>
+                <% }) %>
+            </div>
         <% } %>
     </div>
     <div class="profile-description">
