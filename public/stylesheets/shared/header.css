@@ -41,3 +41,22 @@ header {
 .header-nav li:hover {
     transform: translateY(-2px);
 }
+
+@media (max-width: 767px) {
+    header {
+        width: 100%;
+    }
+
+    .header-nav {
+        padding: .7rem 1rem .7rem;
+        border-radius: 0;
+    }
+
+    .header-nav ul {
+        gap: 1rem;
+    }
+
+    .header-nav li a {
+        font-size: 1rem;
+    }
+}
